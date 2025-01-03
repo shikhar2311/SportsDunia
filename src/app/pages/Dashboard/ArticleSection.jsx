@@ -62,9 +62,11 @@ function ArticleSection() {
       ]
       
 
+  
+
   return (
-    <div className=' bg-purple-200 p-3 text-black flex justify-center flex-col items-center min-h-screen'>
-        <div><button className=' cursor-pointer'>Create Your Blog</button></div>
+    <div className=' relative bg-purple-200 p-3 text-black flex justify-center flex-col items-center min-h-screen'>
+        <div className=' absolute right-1 top-1'><button className=' cursor-pointer bg-green-400 p-2 rounded-lg size-xl'>New ➕</button></div>
         <BlogSection blogs={blogs}/>
     </div>
   )
